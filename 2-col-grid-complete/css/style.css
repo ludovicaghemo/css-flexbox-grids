@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* ci mette spazio solo tra gli elementi; questo spazio poi lo togliamo in main */
+    align-items: flex-start; 
+    /* così ho tolto lo stretch, e il quadrato con adv e la section con gli articles hanno due dimensioni diverse */
+    flex-wrap: wrap;
+    /* va a capo cmq xk abbiamo messo il gap. è come margin, ma è utile xk lo mettiamo dentro */
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: orange;
+    margin-bottom: 1rem;
+}
+
+/* MAIN */
+main {
+    background-color: lightgreen;
+    width: calc(70% - gap);
+    padding: 2rem 1rem 4rem;
+}
+
+section {
+    border: 1px dashed white;
+    padding: 1rem;
+}
+
+article {
+    background-color: grey;
+    color: black;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* AD BLOCK */
+.advertisment {
+    background-color: lightblue;
+    width: 30%;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: lightblue;
+    height: 120px;
+    /* width: 70%; */
+    margin-top: 1rem;
+}
